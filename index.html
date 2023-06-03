@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css"/>"
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Conversor</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Conversor de monedas</h1>
+        <div class="container__conversor">
+            <div class="sub__container">
+                <p>Pesos CLP</p>
+                <input type="number" placeholder="cantidad clp" id="clpInput" />
+            </div>
+            <div class="sub__container">
+                <p>Moneda a convertir</p>
+                <select name="tiposMonedas" id="selectMoney">
+                    <option value="default" selected>Seleccionar una opcion</option>
+                    <option value="euro" id="Euro">Euro</option>
+                    <option value="dolar" id="Dolar">Dolar</option>
+                </select>
+            </div>
+            <div class="sub__container">
+                <!----
+                <input type="button" value="Convertir" id="btnConvert" onclick="conversor()"/>
+                !---->    
+                <button id="btn">Convertir</button>
+                <p id="resultConversor">Resultado :</p>
+                <h2 id="resultado"></h2>
+            </div>
+        </div>
+        <canva id="miGrafico"></canvas>
+    </div>
+    
+    </body>
+    <script src="assets/js/main.js"></script>
+</html>
